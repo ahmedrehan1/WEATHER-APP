@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App with AI Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast with AI Chatbot</h1>
+
+    <!-- Main Content (Chatbot on the Left, Weather on the Right) -->
+    <div class="main-content">
+      
+      <!-- AI Chatbot Section (Left) -->
+      <div class="chatbot-section">
+        <h2>AI Chatbot</h2>
+        <div id="chat-box" class="chat-box">
+          <div id="chat-output" class="chat-output"></div>
+          <input type="text" id="user-input" placeholder="Ask about the weather..." />
+          <button onclick="processUserInput()">Send</button>
+        </div>
+      </div>
+
+      <!-- Weather Forecast Section (Right) -->
+      <div class="weather-section">
+        <h2>Weather Forecast</h2>
+        <div class="input-group">
+          <input type="text" id="city" placeholder="Enter city name" />
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weather-result" class="weather-card"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
